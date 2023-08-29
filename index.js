@@ -14,7 +14,6 @@ const con = mysql.createConnection({
   database: process.env.DATABASE
 });
 
-app.use(cors({origin: '*'}));
 app.use(formidable());
 
 app.post('/', (req, res) => {
